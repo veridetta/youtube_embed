@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sdp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16sdp"
+    android:background="@color/bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp">
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="@dimen/_96sdp"
+                android:layout_height="@dimen/_96sdp"
+                android:src="@drawable/logo"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_16sdp" />
+
+            <!-- Nama Aplikasi -->
+            <TextView
+                android:id="@+id/textViewAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewLogo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_24sdp"
+                android:textStyle="bold" />
+
+            <!-- Judul -->
+            <TextView
+                android:id="@+id/textViewTitleLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewAppName"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:text="Judul" />
+
+            <EditText
+                android:id="@+id/editTextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitleLabel"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:theme="@style/EditText.Colored"
+                android:hint="Masukkan judul" />
+
+            <!-- Program -->
+            <TextView
+                android:id="@+id/textViewProgramLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextTitle"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:text="Program" />
+
+            <Spinner
+                android:id="@+id/spinnerProgram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditText.Colored"
+                android:layout_below="@id/textViewProgramLabel"
+                android:layout_marginTop="@dimen/_8sdp" />
+
+            <!-- Sub Program -->
+            <TextView
+                android:id="@+id/textViewSubProgramLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerProgram"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:text="Sub Program" />
+
+            <Spinner
+                android:id="@+id/spinnerSubProgram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewSubProgramLabel"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:theme="@style/EditText.Colored"
+                android:visibility="gone" />
+
+            <!-- URL Video -->
+            <TextView
+                android:id="@+id/textViewUrlLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerSubProgram"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:text="URL Video" />
+
+            <EditText
+                android:id="@+id/editTextUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewUrlLabel"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:theme="@style/EditText.Colored"
+                android:hint="Masukkan URL Video" />
+
+            <!-- Deskripsi -->
+            <TextView
+                android:id="@+id/textViewDescriptionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextUrl"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:text="Deskripsi" />
+
+            <EditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewDescriptionLabel"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:theme="@style/EditText.Colored"
+                android:hint="Masukkan deskripsi" />
+
+            <!-- Tombol Submit -->
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextDescription"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:theme="@style/Theme.button"
+                android:text="Submit" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

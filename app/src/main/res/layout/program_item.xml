@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="@dimen/_2sdp"
+    android:layout_marginBottom="@dimen/_4sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Thumbnail Video -->
+        <ImageView
+            android:id="@+id/imageViewThumbnail"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/logo"
+            android:layout_marginEnd="@dimen/_8sdp" />
+
+        <!-- Judul Video -->
+        <TextView
+            android:id="@+id/textViewVideoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_toEndOf="@id/imageViewThumbnail"
+            android:text="Title Video"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+        <!-- Deskripsi Video -->
+        <TextView
+            android:id="@+id/textViewVideoDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewVideoTitle"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_toEndOf="@id/imageViewThumbnail"
+            android:text="Deskripsi Video" />
+
+        <!-- Program -->
+        <TextView
+            android:id="@+id/textViewProgram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewVideoDescription"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_toEndOf="@id/imageViewThumbnail"
+            android:text="Program"
+            android:textSize="@dimen/_14sdp" />
+
+        <!-- Sub Program -->
+        <TextView
+            android:id="@+id/textViewSubProgram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Program"
+            android:textSize="@dimen/_12sdp"
+            android:layout_below="@id/textViewProgram"
+            android:layout_toEndOf="@id/imageViewThumbnail"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp" />
+
+        <!-- Tombol Edit -->
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewSubProgram"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:theme="@style/Theme.button"
+            android:text="Edit" />
+
+        <!-- Tombol Hapus -->
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewSubProgram"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:theme="@style/Theme.button"
+            android:layout_toStartOf="@id/buttonEdit"
+            android:text="Hapus" />
+
+        <!-- Tombol Lihat Video -->
+        <Button
+            android:id="@+id/buttonViewVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.button"
+            android:layout_below="@id/textViewSubProgram"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_toStartOf="@id/buttonDelete"
+            android:text="Lihat Video" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

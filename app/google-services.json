@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "410308194965",
+    "firebase_url": "https://ftvr-f3cdd-default-rtdb.firebaseio.com",
+    "project_id": "ftvr-f3cdd",
+    "storage_bucket": "ftvr-f3cdd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410308194965:android:70fbaea2615d3d0595e19c",
+        "android_client_info": {
+          "package_name": "com.example.gvids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410308194965-668s7kree2q60usbujhbqfh2rs3m2d2d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfMrGHZ7hf_aiBrWf0xIzseMoPweMiOS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410308194965-668s7kree2q60usbujhbqfh2rs3m2d2d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

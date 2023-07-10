@@ -1,0 +1,22 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_program1"
+            android:title="Program 1" />
+        <item
+            android:id="@+id/nav_program2"
+            android:title="Program 2" />
+        <item
+            android:id="@+id/nav_program3"
+            android:title="Program 3" />
+        <item
+            android:id="@+id/nav_podcast"
+            android:title="Podcast" />
+        <item
+            android:id="@+id/logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,56 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="@dimen/_2sdp"
+    android:layout_marginBottom="@dimen/_4sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Thumbnail Video -->
+
+        <ImageView
+            android:id="@+id/imageViewThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_6sdp"
+            android:background="@color/merah"
+            android:orientation="vertical"
+            android:layout_below="@id/imageViewThumbnail">
+            <!-- Judul Video -->
+            <TextView
+                android:id="@+id/textViewVideoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/white"
+                android:text="Title Video"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <!-- Deskripsi Video -->
+            <TextView
+                android:id="@+id/textViewVideoDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewVideoTitle"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="Deskripsi Video"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
